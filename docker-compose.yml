@@ -1,0 +1,27 @@
+services:
+  vulnweb_backend:
+    image: jannisz/vulnweb-backend:1.0.0
+    ports:
+      - 3000:3000
+    depends_on:
+      - maria_db
+    environment:
+      MARIADB_HOST: maria_db
+      MARIADB_DATABASE: vulnweb
+      MARIADB_USERNAME: dbuser
+      MARIADB_PASSWORD: hyinbprhAMFDA
+      JWT_SECRET: LjfczFy3gzbiPPJ7eTC4dKin9Dng9RTNBJReGCbeSmpn3KC7J7xLNHqcxymfAfigJr4kEHncQsBQGB
+  vulnweb_frontend:
+      image: jannisz/vulnweb-frontend:1.0.0
+      ports:
+        - 8080:8080
+  maria_db:
+    image: mariadb
+    restart: always
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_DATABASE: vulnweb
+      MYSQL_USER: dbuser
+      MYSQL_PASSWORD: hyinbprhAMFDA
+      MYSQL_ROOT_PASSWORD: hyinbprhAMFDA
