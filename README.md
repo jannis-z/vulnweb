@@ -27,4 +27,8 @@ While attempting the challenge you are not allowed to
 
 ## Walkthrough
 
-If you are a beginner or do not have sufficient knowledge of web related vulnerabilities, you can use the [walkthrough](Walkthrough.md) to guide you through the challenge.
+If you are a beginner or do not have sufficient knowledge of web related vulnerabilities, you can use the [Walkthrough](Walkthrough.md) to guide you through the challenge.
+
+## Vulnerability Summary
+
+Check out the [Vulnerability Summary](VulnerabilitySummary.md) if you would like to see how these vulnerabilities were implemented and how they could be fixed.
